@@ -1,0 +1,24 @@
+{
+  "name": "myinnovationapp",
+  "version": "1.0.0",
+  "description": "MyInnovation App, to log and view innovative ideas!",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Zaid Makani",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.14.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mongoose": "^5.6.7"
+  }
+}
